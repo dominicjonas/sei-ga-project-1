@@ -13,6 +13,7 @@
 ![Screenshot 2021-09-08 at 15 21 35](https://user-images.githubusercontent.com/83312425/132527311-bb9943e3-3fe0-4be1-ad59-1c815e36f0cf.png)
 
 
-![Screenshot 2021-09-08 at 15 53 11](https://user-images.githubusercontent.com/83312425/132533001-191c1fc8-0c79-4266-9186-c81a60e835c1.png)
+![Screenshot 2021-09-08 at 15 55 19](https://user-images.githubusercontent.com/83312425/132533321-111cf208-d06c-4cd7-a23c-df45425400b7.png)
+
 
 
