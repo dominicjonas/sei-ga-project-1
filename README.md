@@ -1,7 +1,7 @@
 # sei-ga-project-1 Speed Typing Game
 
 ## Live project
-  ga-project-1-speed-typing.netlify.app
+  https://ga-project-1-speed-typing.netlify.app/
 
 ## Objective
   - Create a game using vanilla Javascript.
