@@ -1,0 +1,45 @@
+//* end screen
+
+.game-end-message {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 5em;
+  background: limegreen;
+}
+
+.game-end-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// #play-again {
+//   padding: 0.5em 2em;
+//   border: none;
+//   border-radius: 0.3em;
+//   font-size: 3em;
+//   cursor: pointer;
+//   z-index: 99;
+//   background: #eee;
+//   color: hsl(245, 42%, 10%);
+//   transition: all 0.3s ease;
+//   &:hover {
+//     color: #eee;
+//     background: hsl(245, 42%, 10%);
+//   }
+// }
+
+.win84-hidden {
+  display: none;
+}
+.win84-active {
+  display: block;
+  z-index: 999;
+}

@@ -1,0 +1,391 @@
+.title {
+  font-family: monospace;
+  font-weight: 100;
+  font-family: 'Cutive Mono', monospace;
+}
+
+h1 {
+  font-size: var(--fs-400);
+  position: relative;
+  font-weight: 200;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+h1::before,
+h1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+h1::before {
+  background: var(--bg-color);
+  -webkit-animation: typewriter var(--typeSpeed) steps(17) 1s forwards;
+          animation: typewriter var(--typeSpeed) steps(17) 1s forwards;
+}
+
+h1::after {
+  width: 0.125em;
+  background: #155515;
+  -webkit-animation: typewriter var(--typeSpeed) steps(17) 1s forwards, blink 750ms steps(8) infinite;
+          animation: typewriter var(--typeSpeed) steps(17) 1s forwards, blink 750ms steps(8) infinite;
+}
+
+@-webkit-keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+#start-button {
+  padding: 0.2em 1em;
+  border: none;
+  border-radius: 0.3em;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 99;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  background: #eee;
+  color: #110f24;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#start-button:hover {
+  color: #eee;
+  background: #110f24;
+}
+
+.instructions {
+  z-index: 200;
+  color: #eee;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.instructions h1 {
+  font-size: var(--fs-xl);
+  margin: 0.5em 0;
+}
+
+.instructions fieldset {
+  border-color: #110f24;
+}
+
+.instructions fieldset legend {
+  background: none;
+  border: 1px solid #110f24;
+  color: #110f24;
+  padding: 3px 6px;
+  margin-left: 1em;
+  font-size: var(--fs-600);
+}
+
+.instructions fieldset p {
+  padding: 1em;
+  color: #110f24;
+  font-size: var(--fs-500s);
+}
+
+.instructions fieldset i {
+  margin-right: 0.5em;
+}
+
+fieldset {
+  opacity: 0;
+  -webkit-animation: fadein 2s ease 6s forwards;
+          animation: fadein 2s ease 6s forwards;
+}
+
+@-webkit-keyframes fadein {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  to {
+    opacity: 1;
+  }
+}
+
+.silver {
+  color: #7cece7;
+}
+
+.gold {
+  color: #0effff;
+}
+
+.fa-heart-broken {
+  color: crimson;
+}
+
+.fa-trophy {
+  color: gold;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  z-index: 99;
+}
+
+.first {
+  background: limegreen;
+}
+
+.second {
+  background: limegreen;
+  left: 33.3%;
+}
+
+.third {
+  background: limegreen;
+  left: 66.6%;
+}
+
+.game-container {
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#text-container {
+  width: 50%;
+  font-size: var(--fs-500);
+  letter-spacing: 3px;
+  border: 4px dotted limegreen;
+  padding: 1.5rem;
+  color: #fff;
+}
+
+.cursor {
+  -webkit-animation: cursor-flash 0.7s step-end infinite;
+          animation: cursor-flash 0.7s step-end infinite;
+  background: limegreen;
+}
+
+.typed {
+  color: #888;
+}
+
+.keyboard-container {
+  color: #eee;
+  margin-top: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.keyboard-container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.keyboard-container .row div {
+  margin: 0.6em;
+  padding: 0.5em;
+  font-size: var(--fs-500);
+  border: 1px solid #eee;
+  cursor: pointer;
+}
+
+.keyboard-container .row .spacebar {
+  width: 20em;
+  padding: 1.3em;
+}
+
+.active-keyboard {
+  opacity: 1;
+  -webkit-transition: opacity 2s ease;
+  transition: opacity 2s ease;
+}
+
+.hidden-keyboard {
+  opacity: 0;
+}
+
+.active {
+  background: #eee;
+  color: #110f24;
+}
+
+.score-container {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  color: #eee;
+  font-size: var(--fs-500);
+}
+
+.score-container h3 {
+  font-weight: 200;
+}
+
+.score-container .score,
+.score-container .score-streak,
+.score-container .wpm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.score-container #score-display,
+.score-container #scorestreak-display {
+  color: gold;
+  margin-left: 0.5em;
+}
+
+.score-container #wpm-display {
+  color: #0df0f0;
+  margin-left: 0.5em;
+}
+
+@-webkit-keyframes cursor-flash {
+  from,
+  to {
+    background: limegreen;
+  }
+  50% {
+    background: transparent;
+  }
+}
+
+@keyframes cursor-flash {
+  from,
+  to {
+    background: limegreen;
+  }
+  50% {
+    background: transparent;
+  }
+}
+
+.game-end-message {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 5em;
+  background: limegreen;
+}
+
+.game-end-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.win84-hidden {
+  display: none;
+}
+
+.win84-active {
+  display: block;
+  z-index: 999;
+}
+
+:root {
+  --fs-xl: 4rem;
+  --fs-600: 1.5rem;
+  --fs-500: 1.25rem;
+  --fs-400: 1rem;
+  --bg-color: limegreen;
+  --typeSpeed: 4s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #110f24;
+  overflow: hidden;
+}
+
+.hidden {
+  opacity: 0;
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.hide-button {
+  pointer-events: none;
+}
+/*# sourceMappingURL=main.css.map */

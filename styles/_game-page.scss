@@ -1,0 +1,105 @@
+.game-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#text-container {
+  width: 50%;
+  font-size: var(--fs-500);
+  letter-spacing: 3px;
+  border: 4px dotted limegreen;
+  padding: 1.5rem;
+  color: #fff;
+}
+
+.cursor {
+  animation: cursor-flash 0.7s step-end infinite;
+  background: limegreen;
+}
+
+.typed {
+  color: #888;
+}
+
+//* keyboard-display
+
+.keyboard-container {
+  color: #eee;
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .row {
+    display: flex;
+    div {
+      margin: 0.6em;
+      padding: 0.5em;
+      font-size: var(--fs-500);
+      border: 1px solid #eee;
+      cursor: pointer;
+    }
+    .spacebar {
+      width: 20em;
+      padding: 1.3em;
+    }
+  }
+}
+
+.active-keyboard {
+  opacity: 1;
+  transition: opacity 2s ease;
+}
+
+.hidden-keyboard {
+  opacity: 0;
+}
+
+.active {
+  background: #eee;
+  color: hsl(245, 42%, 10%);
+}
+
+// * scores
+
+.score-container {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  color: #eee;
+  font-size: var(--fs-500);
+  h3 {
+    font-weight: 200;
+  }
+  .score,
+  .score-streak,
+  .wpm {
+    display: flex;
+    align-items: center;
+  }
+  #score-display,
+  #scorestreak-display {
+    color: gold;
+    margin-left: 0.5em;
+  }
+  #wpm-display {
+    color: rgb(13, 240, 240);
+    margin-left: 0.5em;
+  }
+}
+
+// * animations
+
+@keyframes cursor-flash {
+  from,
+  to {
+    background: limegreen;
+  }
+  50% {
+    background: transparent;
+  }
+}

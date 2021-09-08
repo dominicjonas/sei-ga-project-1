@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>GA Project 1 Speed Typing Test</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="intro-container">
+        <div class="instructions animate__animated">
+          <h1 class="title animate__animated">Speed Typing Test</h1>
+          <fieldset>
+            <legend>instructions</legend>
+            <p>
+              <i class="fas fa-skiing"></i>type as fast as you can <br />
+              <i class="far fa-star silver"></i> 10 points per word typed
+              <br />
+              <i class="fas fa-star gold"></i> 10 points per correclty
+              typed word (cumulative) <br />
+              <i class="fas fa-heart-broken"></i> 1 point lost per missed
+              letter
+              <br />
+              <i class="fas fa-trophy"></i> try to score 1984..
+            </p>
+          </fieldset>
+        </div>
+        <div class="overlay first"></div>
+        <div class="overlay second"></div>
+        <div class="overlay third"></div>
+      </div>
+      <!--=== overlay ===-->
+
+      <div class="game-container">
+        <div class="score-container">
+          <div class="score">
+            <h3>Score :</h3>
+            <span id="score-display"></span>
+          </div>
+          <div class="score-streak">
+            <h3>Scorestreak :</h3>
+            <span id="scorestreak-display"></span>
+          </div>
+          <div class="wpm">
+            <h3>wpm :</h3>
+            <span id="wpm-display"></span>
+          </div>
+        </div>
+        <!-- <div id="wpm-container"></div> -->
+        <button id="start-button">start</button>
+        <div id="text-container"></div>
+        <div class="keyboard-container">
+          <div class="row">
+            <div>q</div>
+            <div>w</div>
+            <div>e</div>
+            <div>r</div>
+            <div>t</div>
+            <div>y</div>
+            <div>u</div>
+            <div>i</div>
+            <div>o</div>
+            <div>p</div>
+          </div>
+          <div class="row">
+            <div>a</div>
+            <div>s</div>
+            <div>d</div>
+            <div>f</div>
+            <div>g</div>
+            <div>h</div>
+            <div>j</div>
+            <div>k</div>
+            <div>l</div>
+          </div>
+          <div class="row">
+            <div>z</div>
+            <div>x</div>
+            <div>c</div>
+            <div>v</div>
+            <div>b</div>
+            <div>n</div>
+            <div>m</div>
+          </div>
+          <div class="row">
+            <div class="spacebar"></div>
+          </div>
+        </div>
+
+        <div class="game-end-container">
+          <div class="game-end-message"></div>
+          <img src="./assets/tenor.gif" class="win84" alt="" />
+          <button id="play-again">play again?</button>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>
