@@ -1,4 +1,4 @@
-# SEI-GA-Project-1 Speed Typing Game
+# SEI-GA-Project-1 Speed Typing Test
 
 ## Live project: https://ga-project-1-speed-typing.netlify.app/
 
