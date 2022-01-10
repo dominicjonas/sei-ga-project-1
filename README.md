@@ -49,7 +49,7 @@ The concept of the game went through a few iterations, but eventually landed on 
 - Intro screen displaying the game's point system.
 - Clicked button triggers a GSAP animation moving overlays to reveal the main game screen.
 - As the user types, the relevant keys light up.
-- WPM and current score are dynamically rendered.
+- WPM, score-streak and current score are dynamically rendered.
 - When the user finishes typing the passage from 1984, their WPM and final word score are displayed.
 
 
