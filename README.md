@@ -10,22 +10,24 @@
 
 
 
-## Overview
+## Overview - Project Brief
+  - Build a game using vanilla JavaScript
+  - Utilise DOM manipulation and event handling
+  - Use semantic and accessible HTML and CSS
+  - Host and deploy 
 
-  ### Team: 1
-  ### Timespan: 1 day
+### Team: 1
+### Timespan: 1 week
    
 
 ## Technologies used
-### Backend
-- Firebase9
-- Firebase9 authentication 
 ### Frontend
-- React
-- HTML5
-- CSS / SASS
-- Webpack
+- HTML
+- CSS
+- SASS
+- JavaScript
 - GSAP
+- FontAwesome
 ### Design
 - Figma
 ### Version Control
@@ -36,47 +38,36 @@
 
 ## Design
 Figma was used for the initial brainstorming, database design, feature planning and UI concepts. 
-![Screenshot 2022-01-10 at 12 19 43](https://user-images.githubusercontent.com/83312425/148765063-e711e95d-9f6e-47da-8144-065a0ef02bad.png)
+![Screenshot 2022-01-10 at 19 34 08](https://user-images.githubusercontent.com/83312425/148827709-fc1c4fec-84c0-496f-b548-953b56bcd248.png)
+
 
 ## Plan
-My plan for this quick fire project was to go over the Firebase docs in detail and make notes along the way on how to implement each feature of the app. This also involved extra reading on NoSQL compared to SQL database structure, which is what I have been implementing in full-stack projects up until now. 
+When this project began I was in the process of learning to touch type to improve my coding efficiency and general keyboard speed. While brainstorming in Figma, ideas for a speed typing game began to develop. I felt this would be a great chance to solidify some of the fundamental concepts within the JavaScript language, as well as gain some first hand experience with DOM manipulation. 
+The concept of the game went through a few iterations, but eventually landed on having the user type the first passage of 1984 as fast as they can. The programs I was using to learn to touch type gave me a display of my current `WPM` (Words Per Minute) so I wanted to replicate this functionality in my app. 
 
-## GOTY - User Story
-- Sign in using Google authentication.
-- Add a goal for this year.
-- Goal is stored as a document within the ‘goals’ collection of the Firebase9 server and rendered in a UI list.
-- Can delete a goal from the frontend list and database.
-- Given a personalised widget in the UI to display:
-    -  The user’s profile name attached to their Google account.
-    -  A dynamic welcome depending on the local time of the signed in user.
-    - A continuous dynamic clock displaying the time remaining to complete their goals.
-    - A button to sign out.
+## User Story
+- Intro screen displaying the game's point system.
+- Clicked button triggers a GSAP animation moving overlays to reveal the main game screen.
+- As the user types, the relevant keys light up.
+- WPM and current score are dynamically rendered.
+- When the user finishes typing the passage from 1984, their WPM and final word score are displayed.
 
 
 ### Colour Palette
-![Group 25](https://user-images.githubusercontent.com/83312425/148766566-c44451e4-758d-4504-a608-f6aff0eb9a44.png)
+![1984clr](https://user-images.githubusercontent.com/83312425/148831060-3d0964bd-19e9-4a76-8d91-bae52b6febbd.png)
 
 
 ## Functionality
 
 ### GSAP animations
-My previous use of GSAP had only been with vanilla JavaScript. This was the first time integrating it into a larger React project. Robust, high performance animations can be achieved by constructing a `GSAP timeline` within a `useEffect` React hook on the component where you want the animation to trigger.  I used this to trigger a `scale` and `opacity` animation on the GOTY title and subtitle.
-![gsapcode](https://user-images.githubusercontent.com/83312425/148769712-aca04e9d-c847-4016-97cc-27db149285d0.png)
-
-
-### User Auth
-The built in methods of Firebase9 make user authentication fast and intuitive to code.  I chose to use the `GoogleAuthProvider()` method to fetch a user’s credentials to then feed the relevant data throughout the app.
-I passed down `photoURL` and `username` props to the widget to dynamically display the user’s Google profile name and picture.
+This was my first experience was the GSAP animation library. I barely scratched the surface with what is possible so I am very keen to implement it into future projects and explore further. Below is the code for staggering the overlay animations which is triggered with a `click event` when the game starts.
+![gsapovr](https://user-images.githubusercontent.com/83312425/148831839-11ca5e20-234f-4bef-b05b-0c3b6023cd29.png)
 
 
 ## Wins
-I learned a lot about Firebase9 and NoSQL database structure in short timeframe. I absolutely love the efficiency and capabilities of Firebase and will certainly be using it to quickly implement the backend structure for future personal projects. 
+- It was a big challenge to manage the different levels of events running throughout the game. I learned a lot on the principles of functional programming and the importance of DRY code.
+- This was my first experience with using `SASS` and there were  many iterations on the structure of the styling, but the final result is an interesting and polished UI.  
 
-## Future Features
-- Ability to update and edit posted goals.
-- Separate goals into categories of `main`, `learning` and `personal`
-- Add a variety of sign in methods. To include `GitHub` account verification. 
-- Send custom templated email notifications on the progress of completed goals based on the remaining time of the year.  
 
 
 
