@@ -22,17 +22,17 @@
 
 ## Technologies used
 ### Frontend
-- HTML
-- CSS
-- SASS
-- JavaScript
-- GSAP
-- FontAwesome
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Glossary/CSS)
+- [SASS](https://sass-lang.com/documentation)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [GSAP](https://greensock.com/docs/)
+- [FontAwesome](https://fontawesome.com/)
 ### Design
-- Figma
+- [Figma](https://www.figma.com/)
 ### Version Control
-- Git
-- GitHub
+- [Git](https://git-scm.com/doc)
+- [GitHub](https://docs.github.com/en)
 
 ## Design, Plan & User-storys
 
