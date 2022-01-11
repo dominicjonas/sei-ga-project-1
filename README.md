@@ -1,6 +1,6 @@
 # SEI-GA-Project-1 Speed Typing Test
 
-## Live project: https://ga-project-1-speed-typing.netlify.app/
+## [Live project](https://ga-project-1-speed-typing.netlify.app/)S
 
 
 ![Screenshot 2021-09-08 at 15 21 35](https://user-images.githubusercontent.com/83312425/132527311-bb9943e3-3fe0-4be1-ad59-1c815e36f0cf.png)
